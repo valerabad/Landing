@@ -1,3 +1,14 @@
-body {
-    background: rgb(215, 216, 223)
-}   
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "sections/header";
+@import "global/common.scss";
+@import "global/fonts.scss";
+@import "global/mixin.scss";
+@import "global/sprite.scss";
+@import "global/vars.scss";
+@import "global/base.scss";
+@import "global/buttons.scss";
+@import "global/navs.scss";
+
+@import "sections/hero.scss";

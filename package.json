@@ -4,7 +4,8 @@
   "description": "my project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "rimraf": "^2.6.1"
   },
   "dependencies": {
-    "pug": "^2.0.4"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }

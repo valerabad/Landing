@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-const pug = require('gulp-pug');
-const sass = require('gulp-sass');
+const pug = require('gulp-pug'); // for compile from pug to html
+const sass = require('gulp-sass'); // for compile sass pug to css
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
@@ -83,3 +83,27 @@ gulp.task('default', gulp.series(
   gulp.parallel('watch', 'server')
   )
 );
+
+
+// gulp.task('autoprefixer', () => {
+//   const autoprefixer = require('autoprefixer')
+//   const sourcemaps = require('gulp-sourcemaps')
+//   const postcss = require('gulp-postcss')
+ 
+//   return gulp.src('source/styles/**/*.scss')
+//     .pipe(sourcemaps.init())
+//     .pipe(postcss([ autoprefixer() ]))
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('build/css'))
+// })
+
+// var sourcemaps = require('gulp-sourcemaps');
+ 
+// gulp.task('javascript', function() {
+//   gulp.src('src/**/*.js')
+//     .pipe(sourcemaps.init())
+//       .pipe(plugin1())
+//       .pipe(plugin2())
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('dist'));
+// });
